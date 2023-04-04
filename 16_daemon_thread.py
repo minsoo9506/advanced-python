@@ -4,7 +4,6 @@ daemon thread
 - 메인스레드 종료시 즉시 종료
 """
 
-
 import logging
 import threading
 import time
@@ -16,7 +15,6 @@ def thread_func(name, second):
         print(f'{i}초...')
         time.sleep(1)
     logging.info(f"sub-Thread {name}: end!")
-
 
 if __name__ == '__main__':
     format = "%(asctime)s: %(message)s"
