@@ -46,3 +46,14 @@ if __name__ == '__main__':
 - 어떤 thread가 self.value = local_copy를 하기전에 (update전에) 
   다른 thread가 local_copy = self.value를 실행해버리기 때문이다.
 """
+
+"""결과
+22:48:58: Test update. Starting valid is 0
+22:48:58: Thread first start update!
+22:48:58: Thread second start update!
+22:48:59: Thread first end update!
+22:48:59: Thread third start update!
+22:48:59: Thread second end update!
+22:48:59: Thread third end update!
+22:48:59: Testing update. Ending value is 2
+"""

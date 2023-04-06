@@ -28,3 +28,12 @@ if __name__ == '__main__':
     p.join()
 
     print(f"Process p is alive: {p.is_alive()}")  # p 끝났으니 false 나옴
+
+"""결과
+22:48:04: main-process: before creating process
+22:48:04: main-process: During Process
+22:48:04: main-process: Joining Process
+Sub-Process first: start!
+Sub-Process first: finish!
+Process p is alive: False
+"""

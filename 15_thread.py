@@ -54,3 +54,12 @@ if __name__ == '__main__':
     logging.info("main-Thread: wait thread to be finished")
 
     logging.info("main-Thread: all done")
+
+"""결과
+22:50:00: main-Thread: before creating thread
+22:50:00: main-Thread: before running thread
+22:50:00: sub-Thread example: start!
+22:50:00: main-Thread: wait thread to be finished
+22:50:00: main-Thread: all done
+22:50:03: sub-Thread example: end!
+"""

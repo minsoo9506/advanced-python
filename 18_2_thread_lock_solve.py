@@ -64,3 +64,20 @@ if __name__ == '__main__':
             executor.submit(store.update, n)
 
     logging.info(f"Testing update. Ending value is {store.value}")
+
+"""결과
+22:48:38: Test update. Starting valid is 0
+22:48:38: Thread first start update!
+22:48:38: thread first has lock
+22:48:38: Thread second start update!
+22:48:38: thread first release lock
+22:48:38: Thread first end update!
+22:48:38: Thread third start update!
+22:48:38: thread second has lock
+22:48:38: thread second release lock
+22:48:38: Thread second end update!
+22:48:38: thread third has lock
+22:48:38: thread third release lock
+22:48:38: Thread third end update!
+22:48:38: Testing update. Ending value is 3
+"""

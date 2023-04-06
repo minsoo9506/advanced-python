@@ -39,3 +39,12 @@ if __name__ == '__main__':
         tasks = executor.map(task, ['first', 'second'])
 
         print(list(tasks))
+
+"""결과
+22:49:18: main-Thread: before creating and running thread
+22:49:18: sub-Thread first: start!
+22:49:18: sub-Thread first: result = 50005000!
+22:49:18: sub-Thread second: start!
+22:49:18: sub-Thread second: result = 50005000!
+[50005000, 50005000]
+"""
